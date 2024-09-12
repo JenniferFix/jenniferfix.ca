@@ -4,8 +4,9 @@ import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import FloatingTheme from '@/components/FloatingTheme'
 import { Toaster } from '@/components/ui/toaster'
-const inter = Inter({ subsets: ['latin'] })
+import Menu from '@/components/Menu'
 
+const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Jennifer Fix',
   description: 'Internet home of Jennifer Fix',
@@ -35,7 +36,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <FloatingTheme />
-          {/* <Header /> */}
+          <Menu />
           {children}
           <Toaster />
         </ThemeProvider>
